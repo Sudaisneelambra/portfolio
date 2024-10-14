@@ -38,7 +38,7 @@ function sendMessage() {
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
 
-    const myphone= 9747491562
+    const myphone= 919747491562
 
     const whatsappMessage = `
         Name: ${fullName}
