@@ -38,6 +38,8 @@ function sendMessage() {
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
 
+    const myphone= 9747491562
+
     const whatsappMessage = `
         Name: ${fullName}
         Email: ${email}
@@ -46,7 +48,7 @@ function sendMessage() {
         Message: ${message}
     `;
 
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/${myphone}?text=${encodeURIComponent(whatsappMessage)}`;
 
     window.open(whatsappUrl, '_blank');
 }
