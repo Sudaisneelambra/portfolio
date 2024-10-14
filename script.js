@@ -29,3 +29,24 @@ sidenavLinks.forEach(link => {
 
 
 window.addEventListener('resize', handleResize);
+
+
+function sendMessage() {
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const phoneNumber = document.getElementById('phoneNumber').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    const whatsappMessage = `
+        Name: ${fullName}
+        Email: ${email}
+        Phone Number: ${phoneNumber}
+        Subject: ${subject}
+        Message: ${message}
+    `;
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappUrl, '_blank');
+}
